@@ -1,4 +1,4 @@
-<h1>Goalmate/h1>
+<h1>Goalmate</h1>
 <h2>Project Title: Goalmate</h2>
 <b><a href="https://salmon-cliff-0dffb600f.5.azurestaticapps.net/">goalmate</a></b>
 <br>
