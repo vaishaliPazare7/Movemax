@@ -6,6 +6,10 @@ body {
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrollbar */
   }
+
+  iframe {
+    border: none;
+  }
   
   header {
     background-color: #333;
@@ -206,8 +210,6 @@ body {
     position: fixed;
     bottom: 100px;
     right: 20px;
-    width: 300px;
-    height: 400px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);

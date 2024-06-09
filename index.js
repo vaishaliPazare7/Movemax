@@ -3,6 +3,7 @@ const goalList = document.getElementById('goalList');
 
 const botButton = document.getElementById('botButton');
 const botContainer = document.createElement('div');
+botContainer.innerHTML = "<iframe src='https://webchat.botframework.com/embed/globalspeaklang-bot?s=vFSLJeAm7_c.jk6_TPxmvQPpSdS8KwGzzBYRA6-c_UqsORHJaPM1CHU'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>"
 botContainer.classList.add('bot-container');
 document.body.appendChild(botContainer);
 
