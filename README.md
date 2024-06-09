@@ -5,7 +5,7 @@
 <h2>Project Details</h2>
 <b>Project Demo URL :</b> https://salmon-cliff-0dffb600f.5.azurestaticapps.net/ <br>
 <b>Github Repository URL :</b> https://github.com/vaishaliPazare7/goalmate<br>
-<b>Google Drive URL :https://1drv.ms/v/s!AuAvbZd68ZoVhFB7Zawea2es1q55?e=E17qeJ</b> <br>
+<b>Google Drive URL :https://1drv.ms/v/s!AuAvbZd68ZoVhFKhBtZ-JMc4rC7R?e=eOoQ2m</b> <br>
 <b>Industry :</b> Lifestyle<br>
 
 <h2>Problem Statement</h2>
