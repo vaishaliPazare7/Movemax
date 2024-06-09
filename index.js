@@ -13,22 +13,60 @@ botButton.addEventListener('click', () => {
 
 goalForm.addEventListener('submit', addGoal);
 
-function addGoal(event) {
-    event.preventDefault();
 
-    const goalName = document.getElementById('goalName').value;
-    const goalCategory = document.getElementById('goalCategory').value;
-    const goalDescription = document.getElementById('goalDescription').value;
+function renderGoals() {
+    axios.get("https://globalspeakbackend.azurewebsites.net/goals", {
+        responseType: 'json'
+    }).then(response => {
+        console.log(response)
+        goalList.innerHTML = ""
+        let {goals} = response.data
 
-    const goalItem = document.createElement('li');
+            if(!goals) return;
+
+            goals.reverse().forEach((el => {
+
+                const goalItem = document.createElement('li');
     goalItem.innerHTML = `
-        <h3>${goalName}</h3>
-        <p>Category: ${goalCategory}</p>
-        <p>${goalDescription}</p>
+        <h3>${el.g_name}</h3>
+        <p>Category: ${el.category}</p>
+        <p>${el.desc}</p>
     `;
 
     goalList.appendChild(goalItem);
+            }))
+    }, console.error)
+}
+
+function addGoal(event) {
+    event.preventDefault();
+
+    const g_name = document.getElementById('goalName').value;
+    const category = document.getElementById('goalCategory').value;
+    const desc = document.getElementById('goalDescription').value;
+
+    //formButton.setAttribute("disabled", "disabled")
+
+        axios({
+            method: "POST",
+            baseURL: "https://globalspeakbackend.azurewebsites.net/storegoal",
+            headers: {
+                'Content-type': 'application/json'
+            },
+            data: {
+                g_name,
+                category,
+                desc
+            },
+            responseType: 'json'
+        }).then(response => {
+            console.log(response.data.goals)
+            renderGoals()
+            //formButton.removeAttribute("disabled")
+        })
 
     // Clear form inputs
     goalForm.reset();
 }
+
+renderGoals()
