@@ -1,1 +1,49 @@
-rnaodmd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalMate</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>GoalMate</h1>
+        <p>Achieve Your Dreams, One Goal at a Time.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Set a New Goal</h2>
+            <form id="goalForm">
+                <label for="goalName">Goal Name:</label>
+                <input type="text" id="goalName" required>
+
+                <label for="goalCategory">Category:</label>
+                <select id="goalCategory">
+                    <option value="health">Health</option>
+                    <option value="career">Career</option>
+                    <option value="relationships">Relationships</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="goalDescription">Description:</label>
+                <textarea id="goalDescription" required></textarea>
+
+                <button type="submit">Add Goal</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Your Goals</h2>
+            <ul id="goalList"></ul>
+        </section>
+    </main>
+
+    <div class="bot-button" id="botButton">
+        <span class="bot-icon">🤖</span>
+      </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
