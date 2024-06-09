@@ -81,8 +81,7 @@ Authentication and Authorization: Handles user authentication and authorization 
 <img src="./screenshots/db.png" alt="exercise-logging"></img><br>
 
 
-<h3>Azure AI Translator</h3>
-<b>Description:</b><p align="justify">Using Azure AI Translator Service as for translating the text.</p>
+<h3>Azure AI Bot Service</h3>fd
 <img src="./screenshots/bot.png" alt="fitness-insights"></img>
 
 <h3>Live Demo </h3>
